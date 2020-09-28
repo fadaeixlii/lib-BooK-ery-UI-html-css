@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooK</title>
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="stylesheet" href="files/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="logo">Lib-BOOK-erY</span>
+            <ul class="nav hide">
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Lists</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <span class="fa fa-bars bar" onclick=myfunc()></span>
+        </header>
+
+        <div class="texts">
+            <h1>a book is a dream<br/>that you hold in your hands.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/> harum officia repellendus porro culpa nesciunt?Ad,<br/> animi dignissimos inventore ipsa laudantium iure adipisci <br/>consectetur. Temporibus possimus omnis ea aliquid repellendus,
+                earum quas.
+            </p>
+            <a href="">Get more</a>
+        </div>
+        <div class="footer">
+            <a href=""><span class="fa fa-telegram"></span></a>
+            <a href=""><span class="fa fa-instagram "></span></a>
+            <a href=""><span class="fa fa-whatsapp"></span></a>
+            <p>Contact us</p>
+        </div>
+
+    </div>
+    <script>
+        const myfunc = () => {
+            const bars = document.querySelector(".bar");
+            const navs = document.querySelector(".nav");
+            bars.classList.toggle("fa-bars");
+            bars.classList.toggle("fa-times");
+            navs.classList.toggle("hide");
+        }
+    </script>
+</body>
+
+</html>
